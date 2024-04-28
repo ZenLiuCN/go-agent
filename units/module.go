@@ -3,15 +3,14 @@ package units
 import (
 	_ "embed"
 	"github.com/ZenLiuCN/engine"
-	"github.com/ZenLiuCN/gofra/utils"
 )
 
 var (
 	//go:embed units.d.ts
 	define  []byte
 	declare = map[string]any{
-		"withMaxSize":           utils.WithMaximize,
-		"withExpireAfterAccess": utils.WithExpiredAfterAccess,
+		"withMaxSize":           units.WithMaximize,
+		"withExpireAfterAccess": units.WithExpiredAfterAccess,
 		"newStringKeyCache":     NewStringCache,
 		"newNumberKeyCache":     NewNumberCache,
 	}

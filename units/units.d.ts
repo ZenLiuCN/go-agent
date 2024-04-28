@@ -1,4 +1,6 @@
 declare module "agent/units"{
+    // @ts-ignore
+    import * as time from "go/time"
     export interface Cache<K, V> {
         emptyValue(): V
 
@@ -10,7 +12,7 @@ declare module "agent/units"{
 
         putTTL(k: K, v: V, ttl: time.Duration)
 
-        get(k: K): { v: V, ok: boolean }
+        get(k: K): [v: V, ok: boolean]
 
         invalidate(k: K)
 
@@ -27,8 +29,7 @@ declare module "agent/units"{
     export interface Option {
     }
 
-// @ts-ignore
-    import * as time from "go/time"
+
 
     export function withMaxSize(n: number): Option
 
