@@ -3,6 +3,7 @@ package units
 import (
 	_ "embed"
 	"github.com/ZenLiuCN/engine"
+	"github.com/ZenLiuCN/gofra/units"
 )
 
 var (

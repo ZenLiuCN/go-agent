@@ -1,4 +1,4 @@
-declare module "agent/units"{
+declare module "agent/units" {
     // @ts-ignore
     import * as time from "go/time"
     export interface Cache<K, V> {
@@ -12,15 +12,29 @@ declare module "agent/units"{
 
         putTTL(k: K, v: V, ttl: time.Duration)
 
-        get(k: K): [v: V, ok: boolean]
+        /**
+         * @return [value,exists]
+         */
+        get(k: K): (V | boolean)[]
 
         invalidate(k: K)
 
         invalidateAll()
 
+        all(): Entry<K, V>[]
+        count():number
+
         purify()
 
         close()
+    }
+
+    export interface Entry<K, V> {
+        key(): K
+
+        data(): V
+
+        goString(): string
     }
 
 //0 nanos 1 micros 2 mills 3 seconds
@@ -30,10 +44,11 @@ declare module "agent/units"{
     }
 
 
-
     export function withMaxSize(n: number): Option
 
     export function withExpireAfterAccess(n: time.Duration): Option
+
+
 
     export function newStringKeyCache(freq: time.Duration, ttl: time.Duration, unit: Measure, ...opts: Option[]): Cache<string, any>
 
