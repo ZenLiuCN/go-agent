@@ -8,7 +8,7 @@ require (
 )
 
 require (
-	github.com/ZenLiuCN/fn v0.1.21 // indirect
+	github.com/ZenLiuCN/fn v0.1.22 // indirect
 	github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0 // indirect
 	github.com/dlclark/regexp2 v1.11.0 // indirect
