@@ -3,7 +3,7 @@ package model
 import (
 	"context"
 	"fmt"
-	jsql "github.com/ZenLiuCN/engine/sqlx"
+	jsql "github.com/ZenLiuCN/engine/modules/go/sqlx"
 	"github.com/ZenLiuCN/gofra/modeler"
 )
 
