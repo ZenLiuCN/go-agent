@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/Jeffail/gabs/v2 v2.7.0
-	github.com/ZenLiuCN/engine v0.5.2
+	github.com/ZenLiuCN/engine v0.5.4
 	github.com/ZenLiuCN/fn v0.1.30
 	github.com/ZenLiuCN/gofra v0.0.0-20240520062943-411b523ce7df
 	github.com/dop251/goja v0.0.0-20240220182346-e401ed450204
