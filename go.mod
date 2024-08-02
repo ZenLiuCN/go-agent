@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/Jeffail/gabs/v2 v2.7.0
 	github.com/ZenLiuCN/engine v0.5.4
-	github.com/ZenLiuCN/fn v0.1.33
+	github.com/ZenLiuCN/fn v0.1.34
 	github.com/ZenLiuCN/gofra v0.0.0-20240520062943-411b523ce7df
 	github.com/dop251/goja v0.0.0-20240220182346-e401ed450204
 )
@@ -20,7 +20,7 @@ require (
 	github.com/jmoiron/sqlx v1.4.0 // indirect
 	github.com/pquerna/otp v1.4.0 // indirect
 	golang.org/x/crypto v0.23.0 // indirect
-	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
+	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
 	golang.org/x/sys v0.20.0 // indirect
 	golang.org/x/text v0.15.0 // indirect
 )
